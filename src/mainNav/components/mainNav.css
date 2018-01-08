@@ -1,0 +1,13 @@
+.nav.navbar-nav {
+	width: 100%;
+}
+
+.nav.navbar-nav .nav-language {
+	float: right;
+}
+
+@media all and (max-width: 768px) {
+	.nav.navbar-nav .nav-language {
+		float: left;
+	}
+}
