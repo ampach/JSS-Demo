@@ -7,6 +7,7 @@ import Home from './Home';
 
 const mapStateToProps = (state, ownProps) => ({
   loading: state.home.loading,
+    rendering: ownProps.rendering,
   ...ownProps,
 });
 
