@@ -14,7 +14,36 @@
         "placeholders": {
           "page-header": [
             {
-              "componentName": "Jumbotron",
+              "componentName": "HeroImage",
+              "fields": {
+                "image": {
+                  "value": {
+                    "src": "/assets/img/heroImages/p90171463_highres.jpg"
+                  }
+                },
+                "ratio": {
+                  "value": "4-1"
+                },
+                "title": {
+                  "value": "¡Hola extraño!"
+                },
+                "body": {
+                  "value": "<p class=\"text-faded\">Inicio Bootstrap puede ayudar a crear mejores sitios web usando el framework Bootstrap CSS!</p>"
+                },
+                "link": {
+                  "value": {
+                    "href": "http://www.sitecore.net",
+                    "text": "Learn More",
+                    "class": "button button--light",
+                    "target": "_blank"
+                  }
+                }
+              }
+            }
+          ],
+          "page-content": [
+            {
+              "componentName": "Article",
               "fields": {
                 "titleText": {
                   "value": "¡Hola extraño!"
@@ -28,8 +57,7 @@
                 "shade": "dark"
               }
             }
-          ],
-          "page-content": []
+          ]
         }
       }
     ]

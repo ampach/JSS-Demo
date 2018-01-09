@@ -14,7 +14,94 @@
         "placeholders": {
           "page-header": [
             {
-              "componentName": "Jumbotron",
+              "componentName": "HeroSlider",
+              "fields": {
+                "items": [
+                  {
+                    "fields": {
+                      "image": {
+                        "value": {
+                          "src": "/assets/img/heroSlides/2016_bmw_m6_gt3-wide.jpg"
+                        }
+                      },
+                      "ratio": {
+                        "value": "3-1"
+                      },
+                      "title": {
+                        "value": "First slide label!"
+                      },
+                      "body": {
+                        "value": "<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>"
+                      },
+                      "link": {
+                        "value": {
+                          "href": "http://www.sitecore.net",
+                          "text": "Learn More",
+                          "class": "button button--light",
+                          "target": "_blank"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "fields": {
+                      "image": {
+                        "value": {
+                          "src": "/assets/img/heroSlides/bmw_e90_deep_concave_black_helicopter_94623_1920x1080.jpg"
+                        }
+                      },
+                      "ratio": {
+                        "value": "3-1"
+                      },
+                      "title": {
+                        "value": "Second slide label"
+                      },
+                      "body": {
+                        "value": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>"
+                      },
+                      "link": {
+                        "value": {
+                          "href": "http://www.sitecore.net",
+                          "text": "Learn More",
+                          "class": "button button--light",
+                          "target": "_blank"
+                        }
+                      }
+                    }
+                  },
+                  {
+                    "fields": {
+                      "image": {
+                        "value": {
+                          "src": "/assets/img/heroSlides/performance_technic_bmw_m4-HD.jpg"
+                        }
+                      },
+                      "ratio": {
+                        "value": "3-1"
+                      },
+                      "title": {
+                        "value": "Third slide label"
+                      },
+                      "body": {
+                        "value": "<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>"
+                      },
+                      "link": {
+                        "value": {
+                          "href": "http://www.sitecore.net",
+                          "text": "Learn More",
+                          "class": "button button--light",
+                          "target": "_blank"
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "page-content": [
+            {
+              "componentName": "Article",
               "fields": {
                 "titleText": {
                   "value": "Tenemos lo que necesita!"
@@ -28,8 +115,7 @@
                 "titleSize": 2
               }
             }
-          ],
-          "page-content": []
+          ]
         }
       }
     ]

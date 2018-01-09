@@ -8,62 +8,12 @@ export default (manifest) => {
   });
 
   manifest.addComponent({
-    name: 'Carousel',
-    displayName: 'Carousel',
-    fields: [
-      { name: 'items', displayName: 'Items', type: manifest.fieldTypes.contentList },
-    ],
-  });
-
-  manifest.addComponent({
-    name: 'Carousel-items-Item',
-    displayName: 'Carousel Item',
-    fields: [
-      { name: 'image', displayName: 'Image', type: manifest.fieldTypes.image },
-      { name: 'title', displayName: 'Title', type: manifest.fieldTypes.singleLineText },
-      { name: 'body', displayName: 'Body', type: manifest.fieldTypes.richText },
-    ],
-  });
-
-  manifest.addComponent({
     name: 'FormContent',
     displayName: 'Form Content',
     fields: [
       { name: 'title', displayName: 'Title', type: manifest.fieldTypes.singleLineText },
       { name: 'body', displayName: 'Body', type: manifest.fieldTypes.richText },
       { name: 'image', displayName: 'Image', type: manifest.fieldTypes.image },
-    ],
-  });
-
-  manifest.addComponent({
-    name: 'Heading',
-    displayName: 'Heading',
-    fields: [
-      { name: 'text', displayName: 'Text', type: manifest.fieldTypes.singleLineText },
-    ],
-    params: [
-      { name: 'size' },
-    ],
-  });
-
-  manifest.addComponent({
-    name: 'Jumbotron',
-    displayName: 'Jumbotron',
-    fields: [
-      { name: 'titleText', displayName: 'Title Text', type: manifest.fieldTypes.singleLineText },
-      { name: 'body', displayName: 'Body', type: manifest.fieldTypes.richText },
-    ],
-    params: [
-      { name: 'titleSize' },
-      { name: 'shade' },
-    ],
-  });
-
-  manifest.addComponent({
-    name: 'RichText',
-    displayName: 'Rich Text',
-    fields: [
-      { name: 'text', displayName: 'Text', type: manifest.fieldTypes.richText },
     ],
   });
 
@@ -103,11 +53,74 @@ export default (manifest) => {
   });
 
   manifest.addComponent({
-    name: 'TwoColumn',
-    displayName: 'Two Column',
+    name: 'CardList',
+    displayName: 'Card List',
     placeholders: [
-      { name: 'col1' },
-      { name: 'col2' },
+      { name: 'left' },
+      { name: 'right' },
     ],
   });
+
+  manifest.addComponent({
+    name: 'HeroImage',
+    displayName: 'Hero Image',
+    fields: [
+      { name: 'image', displayName: 'Image', type: manifest.fieldTypes.image },
+      { name: 'ratio', displayName: 'Ratio', type: manifest.fieldTypes.singleLineText },
+      { name: 'title', displayName: 'Title', type: manifest.fieldTypes.singleLineText }
+      { name: 'body', displayName: 'Body', type: manifest.fieldTypes.richText },
+    ],
+  });
+
+  manifest.addComponent({
+    name: 'HeroSlider',
+    displayName: 'Hero Slider',
+    fields: [
+      { name: 'items', displayName: 'Items', type: manifest.fieldTypes.contentList },
+    ],
+  });
+
+  manifest.addComponent({
+    name: 'HeroSlider-items-Item',
+    displayName: 'Hero Slider Item',
+    fields: [
+      { name: 'image', displayName: 'Image', type: manifest.fieldTypes.image },
+      { name: 'ratio', displayName: 'Ratio', type: manifest.fieldTypes.singleLineText },
+      { name: 'title', displayName: 'Title', type: manifest.fieldTypes.singleLineText },
+      { name: 'body', displayName: 'Body', type: manifest.fieldTypes.richText },
+    ],
+  });
+
+  manifest.addComponent({
+    name: 'Heading',
+    displayName: 'Heading',
+    fields: [
+      { name: 'text', displayName: 'Text', type: manifest.fieldTypes.singleLineText },
+    ],
+    params: [
+      { name: 'size' },
+    ],
+  });
+
+  manifest.addComponent({
+    name: 'Article',
+    displayName: 'Article',
+    fields: [
+      { name: 'titleText', displayName: 'Title Text', type: manifest.fieldTypes.singleLineText },
+      { name: 'body', displayName: 'Body', type: manifest.fieldTypes.richText },
+    ],
+    params: [
+      { name: 'titleSize' },
+      { name: 'shade' },
+    ],
+  });
+
+  manifest.addComponent({
+    name: 'RichText',
+    displayName: 'Rich Text',
+    fields: [
+      { name: 'text', displayName: 'Text', type: manifest.fieldTypes.richText },
+    ],
+  });
+
 };

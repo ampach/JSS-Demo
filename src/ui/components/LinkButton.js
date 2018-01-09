@@ -3,6 +3,8 @@ import PropTypes from 'prop-types';
 import { commonComponent } from 'enhancers';
 import { Link } from '@sitecore-jss/sitecore-jss-react';
 
+import '../styles/button.css';
+
 const LinkButton = ({ fields }) =>
   <Link field={fields.link} />;
 

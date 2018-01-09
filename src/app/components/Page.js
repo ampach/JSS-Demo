@@ -24,7 +24,6 @@ Page.propTypes = {
 };
 
 Page.styles = {
-  height: '100%',
 };
 
 export default commonComponent(Page);

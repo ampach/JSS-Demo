@@ -23,9 +23,9 @@ const App = ({ style, actions, rendering, lang, sitecoreContext, metaTitle, rout
       title={metaTitle ? metaTitle.value : ''}
       defaultTitle={t('JSS App')}
     />
-    <div className="app-header">
+    <header className="app-header">
       <MainNav actions={actions} />
-    </div>
+    </header>
     <Switch>
       <Route exact path={NOT_FOUND_ROUTE} component={NotFound} />
       <Route exact path={SERVER_ERROR_ROUTE} component={ServerError} />
@@ -34,11 +34,11 @@ const App = ({ style, actions, rendering, lang, sitecoreContext, metaTitle, rout
       )}
       <Route component={NotFound} />
     </Switch>
-    <div className="app-footer">
+    <footer className="app-footer">
       <div className="copyright">
         &copy; {t('Copyright', { year: new Date().getFullYear() })}
       </div>
-    </div>
+    </footer>
   </div>
 );
 

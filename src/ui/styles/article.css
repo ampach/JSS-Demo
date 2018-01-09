@@ -1,0 +1,33 @@
+.article h1 {
+   font: 700 60px/1 "Open Sans",sans-serif;
+}
+
+.article h2 {
+   font: 700 56px/1 "Open Sans",sans-serif;
+}
+
+.article h1,
+.article h2 {
+   margin-bottom: 32px;
+}
+
+.article p {
+   max-width: 100%;
+   color: rgba(0,0,0,.8);
+   font: 400 16px/1.4 "Open Sans",sans-serif;
+}
+
+@media all and (max-width: 992px) {
+   .article h1 {
+      font-size: 30px;
+   }
+
+   .article h2 {
+      font-size: 28px;
+   }
+
+   .article h1,
+   .article h2 {
+      margin-bottom: 16px;
+   }
+}

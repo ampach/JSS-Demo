@@ -1,0 +1,50 @@
+.button {
+   background-color: transparent;
+   border: 3px solid #262626;
+   font: 700 14px/34px "Open Sans",sans-serif;
+   text-transform: uppercase;
+   padding: 0 12px;
+   position: relative;
+   z-index: 1;
+   -webkit-transition: color .2s ease-in-out;
+   transition: color .2s ease-in-out;
+   cursor: pointer;
+   display: inline-block;
+   vertical-align: top;
+   text-decoration: none;
+}
+
+.button:before {
+   content: '';
+   background-color: #262626;
+   position: absolute;
+   left: 0;
+   right: 0;
+   bottom: 0;
+   top: 100%;
+   z-index: -1;
+   -webkit-transition: top .2s ease-in-out;
+   transition: top .2s ease-in-out
+}
+
+.button:hover {
+   color: #fff;
+   text-decoration: none;
+}
+
+.button:hover:before {
+   top: 0;
+}
+
+.button--light {
+   color: #fff;
+   border-color: #fff
+}
+
+.button--light:before {
+   background-color: #fff
+}
+
+.button--light:hover {
+   color: #262626
+}
