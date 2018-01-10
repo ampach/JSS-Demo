@@ -9,6 +9,7 @@
 .article h1,
 .article h2 {
    margin-bottom: 32px;
+   text-align: center;
 }
 
 .article p {

@@ -38,13 +38,13 @@
 
 .button--light {
    color: #fff;
-   border-color: #fff
+   border-color: #fff;
 }
 
 .button--light:before {
-   background-color: #fff
+   background-color: #fff;
 }
 
 .button--light:hover {
-   color: #262626
+   color: #262626;
 }

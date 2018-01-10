@@ -31,7 +31,7 @@
                         "value": "First slide label!"
                       },
                       "body": {
-                        "value": "<p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>"
+                        "value": "<p>This is what we got!</p>"
                       },
                       "link": {
                         "value": {
@@ -83,7 +83,7 @@
                         "value": "Third slide label"
                       },
                       "body": {
-                        "value": "<p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>"
+                        "value": "<p>This is what we got!</p>"
                       },
                       "link": {
                         "value": {

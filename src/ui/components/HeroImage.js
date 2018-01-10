@@ -11,7 +11,7 @@ const HeroImage = ({ style, fields }) => (
         <div className="hero-image__caption">
           <h3 dangerouslySetInnerHTML={{ __html: fields.title.editable }} />
           <span dangerouslySetInnerHTML={{ __html: fields.body.editable }} />
-          <LinkButton fields={{ link: fields.link || routeFields.link }} />
+          <LinkButton fields={{ link: fields.link }} />
         </div>
   </div>
 );
@@ -41,8 +41,7 @@ HeroImage.propTypes = {
       value: PropTypes.object,
       editable: PropTypes.string,
     })
-  }),
-  routeFields: PropTypes.object,
+  })
 };
 
 export default commonComponent(HeroImage);

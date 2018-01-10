@@ -5,6 +5,7 @@ import LinkButton from 'ui/components/LinkButton';
 
 import { Carousel as BootCarousel } from 'react-bootstrap';
 
+import '../styles/heroSlider.css';
 import '../styles/heroImage.css';
 
 const HeroSlider = ({ style, fields }) => (
@@ -17,7 +18,7 @@ const HeroSlider = ({ style, fields }) => (
               <div className="hero-image__caption">
                   <h3 dangerouslySetInnerHTML={{ __html: item.fields.title.editable }} />
                   <span dangerouslySetInnerHTML={{ __html: item.fields.body.editable }} />
-                  <LinkButton fields={{ link: item.fields.link || item.routeFields.link }} />
+                  <LinkButton fields={{ link: item.fields.link }} />
               </div>
           </div>
         </BootCarousel.Item>

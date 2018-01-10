@@ -2,11 +2,9 @@
   "pageEditing": false,
   "navigation": [
     {
+      "name": "Home",
+      "path": "/",
       "children": [
-        {
-			"name": "Home",
-			"path": "/"	
-		},
 		{
           "name": "About",
           "path": "/about"
