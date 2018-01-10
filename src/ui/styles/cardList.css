@@ -1,3 +1,33 @@
+.card-list .container-fluid {
+   padding-left: 0;
+   padding-right: 0;
+   overflow: hidden;
+}
+
+.card-list .container-fluid .row {
+   margin-left: -4px;
+   margin-right: -4px;
+}
+
 .card-list .card-list__item {
-   margin-bottom: 15px;
+   padding: 4px;
+}
+
+.card-list .card-list__item .hero-image__caption h3 {
+   font: 700 36px/1 "Open Sans",sans-serif;
+   margin-bottom: 32px;
+}
+
+@media all and (max-width: 992px) {
+   .card-list .card-list__item .hero-image__caption h3 {
+      font-size: 20px;
+      margin-bottom: 16px;
+   }
+}
+
+@media all and (max-width: 600px) {
+   .card-list .card-list__item .hero-image__caption h3 {
+      font-size: 16px;
+      margin-bottom: 16px;
+   }
 }

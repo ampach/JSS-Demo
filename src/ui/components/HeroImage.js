@@ -5,13 +5,13 @@ import LinkButton from 'ui/components/LinkButton';
 
 import '../styles/heroImage.css';
 
-const HeroImage = ({ props, style, fields }) => (
+const HeroImage = ({ style, fields }) => (
   <div className="hero-image" style={style}>
         <div className={`cover ratio-3-2--mobile ratio-${fields.ratio.value}`} style={{ backgroundImage: `url(${fields.image.value.src})`}}></div>
         <div className="hero-image__caption">
           <h3 dangerouslySetInnerHTML={{ __html: fields.title.editable }} />
           <span dangerouslySetInnerHTML={{ __html: fields.body.editable }} />
-          <LinkButton fields={{ link: fields.link || props.routeFields.link }} />
+          <LinkButton fields={{ link: fields.link }} />
         </div>
   </div>
 );
@@ -41,8 +41,7 @@ HeroImage.propTypes = {
       value: PropTypes.object,
       editable: PropTypes.string,
     })
-  }),
-  routeFields: PropTypes.object,
+  })
 };
 
 export default commonComponent(HeroImage);

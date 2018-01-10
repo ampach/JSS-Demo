@@ -1,0 +1,21 @@
+.footer-nav {
+   margin-bottom: 20px;
+}
+
+.footer-nav h2 {
+   font: 700 26px/1 "Open Sans",sans-serif;
+   color: #fff;
+   padding-bottom: 6px;
+}
+
+.footer-nav .footer-nav__link a {
+   display: inline-block;
+   margin-bottom: 6px;
+   color: rgba(255,255,255,.5);
+   transition: color .2s ease-in-out;
+   text-decoration: underline;
+}
+
+.footer-nav .footer-nav__link a:hover {
+   color: #fff;
+}

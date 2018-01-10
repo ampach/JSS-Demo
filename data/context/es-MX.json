@@ -2,11 +2,9 @@
   "pageEditing": false,
   "navigation": [
     {
+      "name": "Inicio",
+      "path": "/",
       "children": [
-		{
-			"name": "Inicio",
-			"path": "/"
-		},
         {
           "name": "Acera De",
           "path": "/about"
