@@ -34,6 +34,7 @@ const MainNav = ({ navigation, t, currentRoute, currentLang, ...props }) => (
     <Navbar.Collapse>
       {navigation &&
         <Nav navbar>
+          <li className="page-scroll" role="presentation"><a href={getRouteUrl(currentLang, '/')} onClick={e => handleNavItemClick(e, props)}>{t('Home')}</a></li>
           {navigation[0].children.map((navItem, index) => {
             if (!navItem.children) {
               return <NavItem key={index} className="page-scroll" href={getRouteUrl(currentLang, navItem.path)} onClick={e => handleNavItemClick(e, props)} dangerouslySetInnerHTML={{ __html: navItem.name }} />;

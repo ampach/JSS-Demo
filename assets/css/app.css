@@ -9,7 +9,8 @@ body {
   width: 100%;
 }
 body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+  font: 400 16px/1.4 "Open Sans",sans-serif;
+  background-color: #f8f8f8;
 }
 hr {
   border-color: #F05F40;
@@ -53,8 +54,7 @@ p {
   color: rgba(255, 255, 255, 0.7);
 }
 section {
-  padding: 100px 0;
-  height: 100%;
+  margin-bottom: 20px;
 }
 .tabs {
   margin: 50px 0;
@@ -67,7 +67,6 @@ aside {
 }
 .app-header {
   padding: 15px 0;
-  background-color: #f8f8f8;
   border-color: rgba(34, 34, 34, 0.05);
 }
 .navbar {
@@ -135,68 +134,21 @@ aside {
     color: #F05F40;
   }
 }
-.home-container {
+.home-container,
+.about-container{
   position: relative;
-  width: 100%;
-  min-height: auto;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  background-position: center;
-  background-image: url('../img/header.jpg');
-  text-align: center;
-  color: white;
+  padding: 0;
 }
-.home-container .header-content {
-  position: relative;
-  text-align: center;
-  padding: 100px 15px 100px;
-  width: 100%;
+
+.app-footer {
+  padding: 20px;
+  background-color: #262626;
 }
-.home-container h1 {
-  font-weight: 700;
-  text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 30px;
+
+.app-footer .copyright {
+  color: #fff;
 }
-.home-container hr {
-  margin: 30px auto;
-}
-.home-container p {
-  font-weight: 300;
-  color: rgba(255, 255, 255, 0.7);
-  font-size: 16px;
-  margin-bottom: 50px;
-}
-@media (min-width: 768px) {
-  .home-container {
-    min-height: 100%;
-  }
-  .home-container .header-content {
-    position: absolute;
-    top: 50%;
-    -webkit-transform: translateY(-50%);
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    padding: 0 50px;
-  }
-  .home-container .header-content .header-content-inner {
-    max-width: 1000px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  .home-container h1 {
-    font-size: 50px;
-  }
-  .home-container p {
-    font-size: 18px;
-    max-width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-}
+
 .section-heading {
   margin-top: 0;
 }

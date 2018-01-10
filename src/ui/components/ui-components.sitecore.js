@@ -67,8 +67,9 @@ export default (manifest) => {
     fields: [
       { name: 'image', displayName: 'Image', type: manifest.fieldTypes.image },
       { name: 'ratio', displayName: 'Ratio', type: manifest.fieldTypes.singleLineText },
-      { name: 'title', displayName: 'Title', type: manifest.fieldTypes.singleLineText }
+      { name: 'title', displayName: 'Title', type: manifest.fieldTypes.singleLineText },
       { name: 'body', displayName: 'Body', type: manifest.fieldTypes.richText },
+      { name: 'link', displayName: 'Link', type: manifest.fieldTypes.generalLink }
     ],
   });
 
@@ -88,6 +89,7 @@ export default (manifest) => {
       { name: 'ratio', displayName: 'Ratio', type: manifest.fieldTypes.singleLineText },
       { name: 'title', displayName: 'Title', type: manifest.fieldTypes.singleLineText },
       { name: 'body', displayName: 'Body', type: manifest.fieldTypes.richText },
+      { name: 'link', displayName: 'Link', type: manifest.fieldTypes.generalLink }
     ],
   });
 
