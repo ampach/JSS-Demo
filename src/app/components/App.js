@@ -6,6 +6,7 @@ import { translate } from 'react-i18next';
 import { NOT_FOUND_ROUTE, SERVER_ERROR_ROUTE, SITECORE_ROUTES } from 'app/constants';
 import { commonComponent } from 'enhancers';
 import MainNav from 'mainNav/components/MainNav';
+import FooterNav from 'FooterNav/components/FooterNav'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
@@ -35,6 +36,7 @@ const App = ({ style, actions, rendering, lang, sitecoreContext, metaTitle, rout
       <Route component={NotFound} />
     </Switch>
     <footer className="app-footer">
+      <FooterNav actions={actions} />
       <div className="copyright">
         &copy; {t('Copyright', { year: new Date().getFullYear() })}
       </div>
