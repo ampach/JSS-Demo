@@ -1,0 +1,55 @@
+{
+  "name": "FooterNavigation",
+  "displayName": "Footer Navigation",
+  "template": "FooterNavigation",
+  "fields": {
+    "links": []
+  },
+  "children": [
+    {
+      "name": "FooterLink1",
+      "displayName": "Footer Link 1",
+      "template": "LinkButton",
+      "fields": {
+        "link": {
+          "value": {
+            "href": "http://www.sitecore.net",
+            "text": "Learn More",
+            "class": "",
+            "target": "_blank"
+          }
+        }
+      }
+    },
+    {
+      "name": "FooterLink2",
+      "displayName": "Footer Link 2",
+      "template": "LinkButton",
+      "fields": {
+        "link": {
+          "value": {
+            "href": "http://www.sitecore.net",
+            "text": "Learn More 2",
+            "class": "",
+            "target": "_blank"
+          }
+        }
+      }
+    },
+    {
+      "name": "FooterLink3",
+      "displayName": "Footer Link 3",
+      "template": "LinkButton",
+      "fields": {
+        "link": {
+          "value": {
+            "href": "http://www.sitecore.net",
+            "text": "Learn More 3",
+            "class": "",
+            "target": "_blank"
+          }
+        }
+      }
+    }
+  ]
+}

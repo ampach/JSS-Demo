@@ -12,14 +12,15 @@ import * as actions from './actions';
 import './footerNav.css';
 
 class FooterNav extends Component {
+
   componentDidMount() {
-   this.props.actions.fetchData('/content/footer', this.props.currentLang)
+   //this.props.actions.fetchData('/content/footer', this.props.currentLang)
   }
 
   componentWillReceiveProps(nextProps) {
     if(nextProps.currentLang !== this.props.currentLang) // Check if it's a new user, you can also use some unique, like the ID
     {
-      this.props.actions.fetchData('/content/footer', nextProps.currentLang)
+      //this.props.actions.fetchData('/content/FooterNavigation', nextProps.currentLang)
     }
   }
 
@@ -42,10 +43,10 @@ class FooterNav extends Component {
                   <Col lg={12} className="text-center">
                     <h2>Quick links</h2>
                   </Col>
-                  {this.props.data.footerLinks.map((item, index) =>
-                    <Col lg={4} xs={6} key={index} className="text-center footer-nav__link">
-                      <a href={item.path}>{item.name}</a>
-                    </Col>
+                  {this.props.footerNavigation && this.props.footerNavigation.map((item, index) =>
+                      <Col lg={4} xs={6} key={index} className="text-center footer-nav__link">
+                          <a href={item.path}>{item.name}</a>
+                      </Col>
                   )}
               </Row>
             </Grid>
@@ -63,6 +64,8 @@ FooterNav.propTypes = {
   t: PropTypes.func,
   loading: PropTypes.bool,
   currentLang: PropTypes.string,
+    footerNavigation: PropTypes.array,
+    sitecoreContext: PropTypes.object,
 };
 
 FooterNav.styles = {
@@ -70,9 +73,10 @@ FooterNav.styles = {
 };
 
 const mapStateToProps = state => ({
-  loading: state.footerNav.loading,
-  data: state.footerNav.data,
-  currentLang: state.app.currentLang,
+    loading: state.footerNav.loading,
+    data: state.footerNav.data,
+    currentLang: state.app.currentLang,
+    footerNavigation: state.sitecore.context.footerNavigation,
 });
 
 const mapDispatchToProps = dispatch => ({

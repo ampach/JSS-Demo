@@ -125,4 +125,12 @@ export default (manifest) => {
     ],
   });
 
+  manifest.addComponent({
+    name: 'FooterNavigation',
+    displayName: 'Footer Navigation',
+    fields: [
+        { name: 'links', displayName: 'Links', type: manifest.fieldTypes.contentList },
+    ],
+  });
+
 };

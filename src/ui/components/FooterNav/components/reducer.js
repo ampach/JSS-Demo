@@ -3,8 +3,9 @@ import { types } from './actionTypes';
 const initialState = {
   loading: false,
   data: {
-    footerLinks: []
+      children: []
   },
+  footerNavigation: []
 };
 
 const reducer = (state = initialState, action) => {

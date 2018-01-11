@@ -6,7 +6,7 @@ import { translate } from 'react-i18next';
 import { NOT_FOUND_ROUTE, SERVER_ERROR_ROUTE, SITECORE_ROUTES } from 'app/constants';
 import { commonComponent } from 'enhancers';
 import MainNav from 'mainNav/components/MainNav';
-import FooterNav from 'FooterNav/components/FooterNav'
+import FooterNav from 'ui/components/FooterNav/components/FooterNav'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';

@@ -11,5 +11,15 @@
         }
       ]
     }
+  ],
+  "footerNavigation": [
+    {
+      "name": "Home",
+      "path": "/"
+    },
+    {
+      "name": "About Page",
+      "path": "/about"
+    }
   ]
 }
