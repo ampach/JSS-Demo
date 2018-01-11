@@ -8,7 +8,7 @@ import about from 'about/reducer';
 import app from 'app/reducer';
 import home from 'home/reducer';
 import downloadCallout from 'ui/components/downloadCallout/reducer';
-import footerNav from '../FooterNav/components/reducer';
+import footerNav from '../ui/components/FooterNav/components/reducer';
 
 export const makeRootReducer = asyncReducers =>
   combineReducers({

@@ -41,7 +41,7 @@ class FooterNav extends Component {
             <Grid className="footer-nav">
               <Row>
                   <Col lg={12} className="text-center">
-                    <h2>Quick links</h2>
+                    <h2>{this.props.t('Quick Links')}</h2>
                   </Col>
                   {this.props.footerNavigation && this.props.footerNavigation.map((item, index) =>
                       <Col lg={4} xs={6} key={index} className="text-center footer-nav__link">
