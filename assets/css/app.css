@@ -141,6 +141,10 @@ aside {
 }
 
 .app-footer {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 100%;
   padding: 20px;
   background-color: #262626;
 }
