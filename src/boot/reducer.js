@@ -7,7 +7,6 @@ import { sitecoreReducer } from '@sitecore-jss/sitecore-jss-react';
 import about from 'about/reducer';
 import app from 'app/reducer';
 import home from 'home/reducer';
-import downloadCallout from 'ui/components/downloadCallout/reducer';
 import footerNav from '../ui/components/FooterNav/components/reducer';
 
 export const makeRootReducer = asyncReducers =>
@@ -15,7 +14,6 @@ export const makeRootReducer = asyncReducers =>
     about,
     app,
     home,
-    downloadCallout,
     footerNav,
     sitecore: sitecoreReducer,
     model: (state = {}) => state,
