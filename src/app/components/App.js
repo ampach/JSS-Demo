@@ -56,7 +56,8 @@ App.propTypes = {
 };
 
 App.styles = {
-  height: '100%',
+  position: 'relative',
+  minHeight: '100%'
 };
 
 App.displayName = 'App';
