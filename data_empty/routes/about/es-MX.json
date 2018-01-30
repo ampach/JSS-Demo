@@ -1,0 +1,21 @@
+{
+  "name": "about",
+  "displayName": "Acera De",
+  "fields": {
+    "metaTitle": {
+      "value": "Acera De"
+    }
+  },
+  "placeholders": {
+    "main": [
+      {
+        "componentName": "About",
+        "fields": {},
+        "placeholders": {
+          "page-header": [],
+          "page-content": []
+        }
+      }
+    ]
+  }
+}

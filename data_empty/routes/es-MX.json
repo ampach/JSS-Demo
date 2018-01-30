@@ -1,0 +1,21 @@
+{
+  "name": "home",
+  "displayName": "Inicio",
+  "fields": {
+    "metaTitle": {
+      "value": "Inicio"
+    }
+  },
+  "placeholders": {
+    "main": [
+      {
+        "componentName": "Home",
+        "fields": {},
+        "placeholders": {
+          "page-header": [],
+          "page-content": []
+        }
+      }
+    ]
+  }
+}

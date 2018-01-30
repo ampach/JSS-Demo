@@ -12,8 +12,115 @@
         "componentName": "Home",
         "fields": {},
         "placeholders": {
-          "page-header": [],
-          "page-content": []
+          "page-header": [
+            {
+              "componentName": "HeroImage",
+              "fields": {
+                "image": {
+                  "value": {
+                    "src": "/assets/img/heroImages/p90171463_highres.jpg"
+                  }
+                },
+                "ratio": {
+                  "value": "4-1"
+                },
+                "title": {
+                  "value": "This is what we got!"
+                },
+                "body": {
+                  "value": "<p class=\"text-faded\">“Worldwide Harmonized Light Vehicles Test Procedure”  Read the important facts about the new testing procedure here.</p>"
+                },
+                "link": {
+                  "value": {
+                    "href": "http://www.sitecore.net",
+                    "text": "Learn More",
+                    "class": "button button--light",
+                    "target": "_blank"
+                  }
+                }
+              }
+            }
+          ],
+          "page-content": [
+            {
+              "componentName": "Article",
+              "fields": {
+                "titleText": {
+                  "value": "Best family car ever"
+                },
+                "body": {
+                  "value": "<p class=\"text-faded\">“Worldwide Harmonized Light Vehicles Test Procedure” – or WLTP – is a new, realistic measuring process for determining a car’s fuel consumption, range and emissions. It is mandatory for all manufacturers and will be binding in all participating countries. Read the important facts about the new testing procedure here.</p>"
+                }
+              },
+              "params": {
+                "shade": "light",
+                "titleSize": 2
+              }
+            },
+            {
+              "componentName": "CardList",
+              "placeholders": {
+                "left": [
+                  {
+                    "componentName": "HeroImage",
+                    "fields": {
+                      "image": {
+                        "value": {
+                          "src": "/assets/img/cardImages/bmw_iconic_lights_4k-HD.jpg"
+                        }
+                      },
+                      "ratio": {
+                        "value": "3-2"
+                      },
+                      "title": {
+                        "value": "This is what we got!"
+                      },
+                      "body": {
+                        "value": "<p class=\"text-faded\">“Worldwide Harmonized Light Vehicles Test Procedure”  Read the important facts about the new testing procedure here.</p>"
+                      },
+                      "link": {
+                        "value": {
+                          "href": "http://www.sitecore.net",
+                          "text": "Learn More",
+                          "class": "button button--light",
+                          "target": "_blank"
+                        }
+                      }
+                    }
+                  }
+                ],
+                "right": [
+                  {
+                    "componentName": "HeroImage",
+                    "fields": {
+                      "image": {
+                        "value": {
+                          "src": "/assets/img/cardImages/2014-bmw-m3-white-wallpaper-1.jpg"
+                        }
+                      },
+                      "ratio": {
+                        "value": "3-2"
+                      },
+                      "title": {
+                        "value": "This is what we got!"
+                      },
+                      "body": {
+                        "value": "<p class=\"text-faded\">“Worldwide Harmonized Light Vehicles Test Procedure”  Read the important facts about the new testing procedure here.</p>"
+                      },
+                      "link": {
+                        "value": {
+                          "href": "http://www.sitecore.net",
+                          "text": "Learn More",
+                          "class": "button button--light",
+                          "target": "_blank"
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          ]
         }
       }
     ]

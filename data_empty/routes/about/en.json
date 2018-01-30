@@ -1,0 +1,21 @@
+{
+  "name": "about",
+  "displayName": "About",
+  "fields": {
+    "metaTitle": {
+      "value": "About"
+    }
+  },
+  "placeholders": {
+    "main": [
+      {
+        "componentName": "About",
+        "fields": {},
+        "placeholders": {
+          "page-header": [],
+          "page-content": []
+        }
+      }
+    ]
+  }
+}

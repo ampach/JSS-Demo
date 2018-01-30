@@ -12,8 +12,52 @@
         "componentName": "Home",
         "fields": {},
         "placeholders": {
-          "page-header": [],
-          "page-content": []
+          "page-header": [
+            {
+              "componentName": "HeroImage",
+              "fields": {
+                "image": {
+                  "value": {
+                    "src": "/assets/img/heroImages/p90171463_highres.jpg"
+                  }
+                },
+                "ratio": {
+                  "value": "4-1"
+                },
+                "title": {
+                  "value": "¡Hola extraño!"
+                },
+                "body": {
+                  "value": "<p class=\"text-faded\">Inicio Bootstrap puede ayudar a crear mejores sitios web usando el framework Bootstrap CSS!</p>"
+                },
+                "link": {
+                  "value": {
+                    "href": "http://www.sitecore.net",
+                    "text": "Learn More",
+                    "class": "button button--light",
+                    "target": "_blank"
+                  }
+                }
+              }
+            }
+          ],
+          "page-content": [
+            {
+              "componentName": "Article",
+              "fields": {
+                "titleText": {
+                  "value": "¡Hola extraño!"
+                },
+                "body": {
+                  "value": "<p>Inicio Bootstrap puede ayudar a crear mejores sitios web usando el framework Bootstrap CSS! Sólo tiene que descargar la plantilla y empezar a ir, sin ningún compromiso!</p>"
+                }
+              },
+              "params": {
+                "titleSize": 1,
+                "shade": "dark"
+              }
+            }
+          ]
         }
       }
     ]

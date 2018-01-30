@@ -1,0 +1,25 @@
+{
+  "pageEditing": false,
+  "navigation": [
+    {
+      "name": "Home",
+      "path": "/",
+      "children": [
+		{
+          "name": "About",
+          "path": "/about"
+        }
+      ]
+    }
+  ],
+  "footerNavigation": [
+    {
+      "name": "Home",
+      "path": "/"
+    },
+    {
+      "name": "About Page",
+      "path": "/about"
+    }
+  ]
+}
