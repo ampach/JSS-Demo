@@ -4,8 +4,8 @@
   "description": "An opinionated and full-featured app utilizing Sitecore JavaScript Services.",
   "main": "index.js",
   "config": {
-    "appName": "JssDemoApp",
-    "sitecoreDistPath": "/dist/JssDemoApp",
+    "appName": "BrimitJssApp",
+    "sitecoreDistPath": "/dist/BrimitJssApp",
     "sitecoreConfigPath": "/App_Config/Include/zzz",
     "buildArtifactsPathDev": "./dist/dev",
     "buildArtifactsPathProd": "./dist/prod",
