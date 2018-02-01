@@ -66,7 +66,7 @@ class DataProvider extends DataProviderBase {
 
   configurei18Next(i18n, options) {
     options.backend = {
-      loadPath: `${__SC_API_HOST__}${__DEV_TRANSLATION_PATH__}`,
+      loadPath: `${__DEV_TRANSLATION_PATH__}`,
       parse: (data) => {
       data = JSON.parse(data);
         if (data.phrases) {
