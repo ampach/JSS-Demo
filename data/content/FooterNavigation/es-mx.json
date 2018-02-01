@@ -1,24 +1,55 @@
 {
-  "footerLinks" : [
+  "name": "FooterNavigation",
+  "displayName": "Footer Navigation",
+  "template": "FooterNavigation",
+  "fields": {
+    "links": []
+  },
+  "children": [
     {
-      "name": "Acera De",
-      "path": "/about"
+      "name": "FooterLink1",
+      "displayName": "Footer Link 1",
+      "template": "LinkButton",
+      "fields": {
+        "link": {
+          "value": {
+            "href": "http://www.sitecore.net",
+            "text": "Acera De",
+            "class": "",
+            "target": "_blank"
+          }
+        }
+      }
     },
     {
-      "name": "Acera De",
-      "path": "/about"
+      "name": "FooterLink2",
+      "displayName": "Footer Link 2",
+      "template": "LinkButton",
+      "fields": {
+        "link": {
+          "value": {
+            "href": "http://www.sitecore.net",
+            "text": "Aprende más",
+            "class": "",
+            "target": "_blank"
+          }
+        }
+      }
     },
     {
-      "name": "Acera De",
-      "path": "/about"
-    },
-    {
-      "name": "Acera De",
-      "path": "/about"
-    },
-    {
-      "name": "Acera De",
-      "path": "/about"
+      "name": "FooterLink3",
+      "displayName": "Footer Link 3",
+      "template": "LinkButton",
+      "fields": {
+        "link": {
+          "value": {
+            "href": "http://www.sitecore.net",
+            "text": "Aprende más 2",
+            "class": "",
+            "target": "_blank"
+          }
+        }
+      }
     }
   ]
 }

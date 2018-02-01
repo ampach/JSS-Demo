@@ -3,8 +3,8 @@
   "version": "6.1.0",
   "description": "An opinionated and full-featured app utilizing Sitecore JavaScript Services.",
   "config": {
-    "appName": "JssAdvancedApp",
-    "sitecoreDistPath": "/dist/JssAdvancedApp",
+    "appName": "BrimitJssApp",
+    "sitecoreDistPath": "/dist/BrimitJssApp",
     "sitecoreConfigPath": "/App_Config/Include/zzz",
     "buildArtifactsPathDev": "./dist/dev",
     "buildArtifactsPathProd": "./dist/prod",
