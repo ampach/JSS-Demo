@@ -1,4 +1,4 @@
-import DataProvider from 'data-provider';
+import SitecoreContentService from "../../../../../lib/SitecoreContentService";
 import { types } from './actionTypes';
 
 export * from 'enhancers/commonActions';
@@ -11,7 +11,7 @@ export const fetchData = (contentRoute, language) => (dispatch) => {
     },
   });
 
-  DataProvider.getItemData(contentRoute, language)
+  SitecoreContentService.getItemData(contentRoute, language)
     .then((data) => {
       dispatch({
         type: types.CONTENT_REQUEST_COMPLETED,

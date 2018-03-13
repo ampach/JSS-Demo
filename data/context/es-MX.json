@@ -11,15 +11,5 @@
         }
       ]
     }
-  ],
-  "footerNavigation": [
-    {
-      "name": "Casa",
-      "path": "/"
-    },
-    {
-      "name": "Acerca de la página",
-      "path": "/about"
-    }
   ]
 }
