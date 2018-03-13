@@ -1,0 +1,21 @@
+{
+  "name": "private",
+  "displayName": "Private",
+  "fields": {
+    "metaTitle": {
+      "value": "Private area"
+    }
+  },
+  "placeholders": {
+    "main": [
+      {
+        "componentName": "Private",
+        "fields": {},
+        "placeholders": {
+          "page-header": [],
+          "page-content": []
+        }
+      }
+    ]
+  }
+}

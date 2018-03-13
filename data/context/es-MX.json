@@ -8,6 +8,10 @@
         {
           "name": "Acera De",
           "path": "/about"
+        },
+		{
+          "name": "Privado",
+          "path": "/private"
         }
       ]
     }

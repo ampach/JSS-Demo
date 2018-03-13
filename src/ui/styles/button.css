@@ -48,3 +48,16 @@
 .button--light:hover {
    color: #262626;
 }
+
+.button--dark {
+   color: #262626;
+   border-color: #262626;
+}
+
+.button--dark:before {
+   background-color: #262626;
+}
+
+.button--dark:hover {
+   color: #fff;
+}

@@ -8,6 +8,10 @@
 		{
           "name": "About",
           "path": "/about"
+        },
+		{
+          "name": "Private",
+          "path": "/private"
         }
       ]
     }
@@ -20,6 +24,10 @@
     {
       "name": "About Page",
       "path": "/about"
+    },
+	{
+      "name": "Private",
+      "path": "/private"
     }
   ]
 }

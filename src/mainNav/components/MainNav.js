@@ -6,6 +6,7 @@ import { Nav, NavItem, Navbar, NavDropdown, MenuItem } from 'react-bootstrap';
 import { translate } from 'react-i18next';
 import { withRouter } from 'react-router-dom';
 import { getRouteUrl } from 'app/sitecoreRoutes';
+import LoginModal from './LoginModal';
 
 import './mainNav.css'
 
@@ -23,7 +24,8 @@ const handleNavItemClick = (e, props) => {
   }
 };
 
-const MainNav = ({ navigation, t, currentRoute, currentLang, ...props }) => (
+const MainNav = ({ navigation, t, currentRoute, currentLang, showLogin, loginFailed, user, ...props }) => (
+  <div>
   <Navbar id="mainNav" style={props.style}>
     <Navbar.Header>
       <Navbar.Toggle>
@@ -53,10 +55,18 @@ const MainNav = ({ navigation, t, currentRoute, currentLang, ...props }) => (
             <MenuItem key="en" className="flag-icon flag-icon-us" href={getRouteUrl('en', currentRoute)} onClick={e => handleNavItemClick(e, props)}>English (US)</MenuItem>
             <MenuItem key="es-mx" className="flag-icon flag-icon-mx" href={getRouteUrl('es-mx', currentRoute)} onClick={e => handleNavItemClick(e, props)}>Español (MX)</MenuItem>
           </NavDropdown>
+		  
+			{
+              user ?
+                <NavItem key="logout" className="nav-login" onClick={e => props.actions.logout(getRouteUrl(currentLang, currentRoute))}>{t('Logout')}</NavItem> :
+				<NavItem key="login" className="nav-login" onClick={e => props.actions.showLoginForm()}>{t('Login')}</NavItem>
+            }
         </Nav>
       }
     </Navbar.Collapse>
   </Navbar>
+  <LoginModal key="loginModal" show={showLogin} loginFailed={loginFailed} currentRoute={getRouteUrl(currentLang, currentRoute)} onHide={props.actions.hideLoginForm} onSubmit={props.actions.loginSubmit} />
+  </div>
 );
 
 MainNav.propTypes = {
@@ -67,6 +77,9 @@ MainNav.propTypes = {
   t: PropTypes.func,
   currentRoute: PropTypes.string,
   currentLang: PropTypes.string,
+  showLogin: PropTypes.bool,
+  loginFailed: PropTypes.bool,
+  user: PropTypes.object
 };
 
 MainNav.styles = {
@@ -77,6 +90,9 @@ const mapStateToProps = state => ({
   navigation: state.sitecore.context.navigation,
   currentRoute: state.app.currentRoute,
   currentLang: state.app.currentLang,
+  showLogin: state.app.showLogin,
+  loginFailed: state.app.loginFailed,
+  user: state.sitecore.context.user
 });
 
 export default translate()(withRouter(connect(mapStateToProps)(commonComponent(MainNav))));

@@ -1,11 +1,13 @@
 import HomeContainer from 'home/components/HomeContainer';
 import AboutContainer from 'about/components/AboutContainer';
+import PrivateContainer from 'private/components/PrivateContainer';
 import * as UI from 'ui/components';
 
 
 const components = new Map();
 components.set('Home', HomeContainer);
 components.set('About', AboutContainer);
+components.set('Private', PrivateContainer);
 components.set('Heading', UI.Heading);
 components.set('RichText', UI.RichText);
 components.set('LinkButton', UI.LinkButton);

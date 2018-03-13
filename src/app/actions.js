@@ -108,4 +108,65 @@ export const changeRoute = newRoute => dispatch => {
   dispatchRoute(dispatch, newRoute);
 };
 
+export const showLoginForm = () => ({
+  type: types.LOGIN_FORM_VISIBILITY_TOGGLED,
+  payload: {
+    show: true
+  }
+});
+
+export const hideLoginForm = () => ({
+  type: types.LOGIN_FORM_VISIBILITY_TOGGLED,
+  payload: {
+    show: false
+  }
+});
+
+export const loginSubmit = (username, password, currentRoute) => dispatch => {
+  var payload = {
+    domain: "extranet",
+    username,
+    password
+  };
+  fetch(__SC_API_HOST__ + "/sitecore/api/ssc/auth/login", {
+    headers: {
+      Accept: "application/json",
+      "Content-Type": "application/json"
+    },
+    credentials: "include",
+    method: "POST",
+    body: JSON.stringify(payload)
+  }).then(response => {
+    const success = response.status >= 200 && response.status < 300;
+    dispatch({
+      type: types.LOGIN_COMPLETE,
+      payload: {
+        success
+      }
+    });
+    //refresh current route for permission changes
+    dispatchRoute(dispatch, currentRoute);
+  });
+};
+
+export const logout = currentRoute => dispatch => {
+  fetch(__SC_API_HOST__ + "/sitecore/api/ssc/auth/logout", {
+    headers: {
+      Accept: "application/json"
+    },
+    credentials: "include",
+    method: "POST"
+  }).then(response => {
+    const success = response.status >= 200 && response.status < 300;
+    dispatch({
+      type: types.LOGOUT_COMPLETE,
+      payload: {
+        success
+      }
+    });
+    //refresh current route for permission changes
+    dispatchRoute(dispatch, currentRoute);
+  });
+};
+
 export * from "enhancers/commonActions";

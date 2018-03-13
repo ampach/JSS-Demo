@@ -4,5 +4,13 @@
   "Language": "Language",
   "Download Form": "Download Form",
   "Close": "Close",
-  "Quick Links": "Quick links"
+  "Quick Links": "Quick links",
+  "Close": "Close",
+  "Login": "Login",
+  "Logout": "Logout",
+  "Cancel": "Cancel",
+  "Username": "Username",
+  "Password": "Password",
+  "LoginFailed": "Invalid username and/or password. Try b?",
+  "PrivateAreaNotice": "Please login first"
 }
