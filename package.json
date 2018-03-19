@@ -1,10 +1,10 @@
 {
-  "name": "sitecore-jss-advancedapp",
+  "name": "jss-advanced-react",
   "version": "7.0.0",
   "description": "An opinionated and full-featured app utilizing Sitecore JavaScript Services.",
   "config": {
-    "appName": "JssAdvancedAppReactWeb",
-    "sitecoreDistPath": "/dist/JssAdvancedAppReactWeb",
+    "appName": "BrimitJssApp",
+    "sitecoreDistPath": "/dist/BrimitJssApp",
     "sitecoreConfigPath": "/App_Config/Include/zzz",
     "buildArtifactsPath": "./dist",
     "staticOutputPublicPath": "/",
