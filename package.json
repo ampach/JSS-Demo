@@ -9,7 +9,7 @@
     "buildArtifactsPath": "./dist",
     "staticOutputPublicPath": "/",
     "routeDataDir": "./data/routes",
-    "language": "en"
+    "language": "es-MX"
   },
   "scripts": {
     "jss": "jss",
