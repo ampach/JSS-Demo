@@ -20,6 +20,9 @@ const Private = ({ style, rendering, t, user,  ...otherProps }) => (
                                     <Col lg={12}>
                                         <h2>{t('PrivateAreaNotice')}</h2>
                                     </Col>
+                                    <Col lg={12}>
+                                        <img className="restricted-icon" alt="restricted" src="/assets/img/restricted.png" />
+                                    </Col>
                                 </Row>
                             </Grid>
                         </div>

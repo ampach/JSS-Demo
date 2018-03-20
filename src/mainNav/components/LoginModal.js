@@ -4,6 +4,8 @@ import { commonComponent } from 'enhancers';
 import { translate } from 'react-i18next';
 import { Modal, Button, Alert, FormGroup, FormControl, ControlLabel } from 'react-bootstrap';
 
+import './loginModal.css'
+
 class LoginModal extends React.Component {
   constructor(props) {
     super(props);
@@ -80,8 +82,8 @@ class LoginModal extends React.Component {
             </FormGroup>
           </Modal.Body>
           <Modal.Footer>
-            <Button disabled={!this.validateForm()} type="submit">{t('Login')}</Button>
-            <Button onClick={props.onHide}>{t('Cancel')}</Button>
+            <Button className="button button--submit" disabled={!this.validateForm()} type="submit">{t('Login')}</Button>
+            <a className="button button--dark" onClick={props.onHide}>{t('Cancel')}</a>
           </Modal.Footer>
         </form>
       </Modal>

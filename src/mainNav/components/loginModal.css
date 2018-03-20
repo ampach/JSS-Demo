@@ -1,0 +1,47 @@
+.custom-modal.modal-dialog .modal-content {
+   border: 3px solid #262626;
+   border-radius: 0;
+}
+
+.custom-modal.modal-dialog .modal-header .modal-title {
+  font: 700 32px/1 "Open Sans",sans-serif
+}
+
+.custom-modal.modal-dialog .modal-body input {
+   border: 1px solid #262626;
+   border-radius: 0;
+}
+
+.custom-modal.modal-dialog .modal-footer .button--submit {
+   margin-right: 20px;
+   background-color: transparent;
+   border: 3px solid green;
+   color: green;
+   font: 700 14px/34px "Open Sans",sans-serif;
+   text-transform: uppercase;
+   padding: 0 12px;
+   position: relative;
+   z-index: 1;
+   -webkit-transition: color .2s ease-in-out;
+   transition: color .2s ease-in-out;
+   cursor: pointer;
+   display: inline-block;
+   vertical-align: top;
+   text-decoration: none;
+   border-radius: 0;
+}
+
+.custom-modal.modal-dialog .modal-footer .button--submit:before {
+   background-color: green;
+}
+
+.custom-modal.modal-dialog .modal-footer .button--submit:hover {
+   color: #fff;
+}
+
+.custom-modal.modal-dialog .modal-footer .button--submit[disabled] {
+   pointer-events: none;
+   cursor: disabled;
+   border: 3px solid gray;
+   color: gray;
+}

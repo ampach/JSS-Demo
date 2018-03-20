@@ -402,6 +402,12 @@ body {
   width: 100%;
 }
 
+.restricted-icon {
+  display: block;
+  max-width: 250px;
+  margin: 16px auto;
+}
+
 /* 
   Experience Editor fixes from
   http://www.sagepath.com/blogs/development/articles/add-here-bug-bootstrap
